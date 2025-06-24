@@ -1,0 +1,7 @@
+name: 'Seed CMS Theme Installer'
+type: module
+description: 'Installs and sets the Seed CMS Blog Theme as default when the recipe is applied.'
+core_version_requirement: ^11
+package: 'Seed CMS'
+dependencies:
+  - system

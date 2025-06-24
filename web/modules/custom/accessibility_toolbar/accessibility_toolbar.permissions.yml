@@ -1,0 +1,4 @@
+administer accessibility toolbar:
+  title: 'Administer accessibility toolbar'
+  description: 'Configure accessibility toolbar settings.'
+  restrict access: true

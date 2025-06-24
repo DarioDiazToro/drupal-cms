@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function seed_cms_theme_installer_install() {
+  $theme = 'seed_cms_blog_theme';
+
+  /** @var \Drupal\Core\Extension\ThemeInstallerInterface $theme_installer */
+  $theme_installer = \Drupal::service('theme_installer');
+
+  /** @var \Drupal\Core\Extension\ThemeHandlerInterface $theme_handler */
+  $theme_handler = \Drupal::service('theme_handler');
+
+  if (!$theme_handler->themeExists($theme)) {
+    \Drupal::logger('seed_cms_theme_installer')->warning("Theme '$theme' is not available.");
+    return;
+  }
+
+  // Install the theme if not already installed.
+  if (!$theme_handler->hasUi($theme)) {
+    $theme_installer->install([$theme]);
+  }
+
+  // Set the theme as the default.
+  \Drupal::configFactory()
+    ->getEditable('system.theme')
+    ->set('default', $theme)
+    ->save();
+
+  \Drupal::logger('seed_cms_theme_installer')->notice("Theme '$theme' installed and set as default.");
+}

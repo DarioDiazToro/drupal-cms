@@ -1,0 +1,72 @@
+uuid: 4ac6ecd7-fbdd-4bfc-a161-07f508213d9f
+langcode: en
+status: false
+dependencies:
+  config:
+    - field.storage.node.field_author
+    - field.storage.node.field_editorial
+    - field.storage.node.field_tags
+  module:
+    - node
+id: blog_index
+name: 'Blog Index'
+description: ''
+read_only: false
+field_settings:
+  created:
+    label: 'Authored on'
+    datasource_id: 'entity:node'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - node
+  field_author:
+    label: Autor
+    datasource_id: 'entity:node'
+    property_path: field_author
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_author
+  field_editorial:
+    label: Editorial
+    datasource_id: 'entity:node'
+    property_path: field_editorial
+    type: boolean
+    dependencies:
+      config:
+        - field.storage.node.field_editorial
+  field_tags:
+    label: Tags
+    datasource_id: 'entity:node'
+    property_path: field_tags
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_tags
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - blog
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: ''

@@ -1,0 +1,10 @@
+name: 'Seed CMS Blog recipe'
+type: Drupal CMS
+description: 'Adds custom footer, comment enhancements, and visual improvements to the base Drupal CMS blog experience.'
+recipes:
+  - seed_cms_comments_recipe
+  - seed_cms_custom_footer_block
+install:
+  - seed_cms_theme_installer
+  - accessibility_toolbar
+  # - theme:seed_cms_blog_theme

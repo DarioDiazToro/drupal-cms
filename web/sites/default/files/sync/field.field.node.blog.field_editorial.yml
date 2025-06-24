@@ -1,0 +1,21 @@
+uuid: f07b3efb-d3a0-45f5-8fa2-e54fada37518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_editorial
+    - node.type.blog
+id: node.blog.field_editorial
+field_name: field_editorial
+entity_type: node
+bundle: blog
+label: Editorial
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

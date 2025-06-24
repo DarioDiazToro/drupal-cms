@@ -1,0 +1,7 @@
+name: Accessibility Toolbar
+type: module
+description: 'Provides a floating accessibility toolbar with features like font size adjustment, high contrast, grayscale and reset options.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:block

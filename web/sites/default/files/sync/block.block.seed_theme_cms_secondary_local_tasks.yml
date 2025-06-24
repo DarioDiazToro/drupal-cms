@@ -1,0 +1,22 @@
+uuid: 95351e7d-7ff4-41ac-ba0a-24a86770b7d7
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: 3KAyDgB3FHENrBwroAUcCPvkfPHBMFcRDnsZFyFMuwc
+id: seed_theme_cms_secondary_local_tasks
+theme: seed_theme_cms
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

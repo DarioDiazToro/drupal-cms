@@ -1,0 +1,7 @@
+accessibility_toolbar.settings:
+  path: '/admin/config/user-interface/accessibility-toolbar'
+  defaults:
+    _form: '\Drupal\accessibility_toolbar\Form\AccessibilityToolbarSettingsForm'
+    _title: 'Accessibility Toolbar Settings'
+  requirements:
+    _permission: 'administer accessibility toolbar'

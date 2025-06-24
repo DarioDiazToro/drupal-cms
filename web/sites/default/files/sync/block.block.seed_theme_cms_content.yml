@@ -1,0 +1,22 @@
+uuid: 411118b9-2363-4f84-9da6-b0cd27c897e8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: G4iNGvy_k2yNIEH_FJmbkvgBBar1etJIhKJYuygT7hU
+id: seed_theme_cms_content
+theme: seed_theme_cms
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

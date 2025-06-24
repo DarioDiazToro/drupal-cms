@@ -1,0 +1,20 @@
+uuid: 2edb3b28-39cd-4a9b-92ee-6e01c5872eb3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: bXIY_bcTLD1-0gwNQhWPHANNy6hQa_RxJgvHxKhNS2E
+id: seed_theme_cms_primary_admin_actions
+theme: seed_theme_cms
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 5a63df62-3e05-4323-b485-e7d0a5d2eef5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.blog_comments
+    - field.field.comment.blog_comments.field_description
+  module:
+    - text
+_core:
+  default_config_hash: 79QRuntqAmQevkgrXCcdqbIJPWOFrsJvPWluVJ2wQIk
+id: comment.blog_comments.default
+targetEntityType: comment
+bundle: blog_comments
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

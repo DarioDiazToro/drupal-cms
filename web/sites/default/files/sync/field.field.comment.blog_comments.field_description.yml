@@ -1,0 +1,26 @@
+uuid: 0c1fd024-24b0-423a-b0ff-f16749c75e56
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.blog_comments
+    - field.storage.comment.field_description
+    - filter.format.content_format
+  module:
+    - text
+_core:
+  default_config_hash: tGhqljRJRUpeQxQVr4e5xtTR6UCmbyGqsfZZ0wzSQiM
+id: comment.blog_comments.field_description
+field_name: field_description
+entity_type: comment
+bundle: blog_comments
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - content_format
+field_type: text_long

@@ -1,0 +1,27 @@
+uuid: d4cda047-5170-42e1-abf7-911db12c288a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-custom
+  module:
+    - system
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: XsPkQmDMooKSawl1HpTGIt_m6wrhxb38ewNrZH0ef5w
+id: seed_theme_cms_menublog
+theme: seed_theme_cms
+region: footer_top
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-custom'
+settings:
+  id: 'system_menu_block:footer-custom'
+  label: 'Menu Blog'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,113 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * @file
+ * Primary module hooks for Accessibility Toolbar module.
+ */
+
+/**
+ * Implements hook_help().
+ *
+ * @param string $route_name
+ *   The current route name.
+ * @param \Drupal\Core\Routing\RouteMatchInterface $route_match
+ *   The current route match.
+ */
+function accessibility_toolbar_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.accessibility_toolbar':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Accessibility Toolbar module provides a customizable toolbar with various accessibility features to enhance the user experience of your website. It includes:') . '</p>';
+      $output .= '<ul>';
+      $output .= '<li>' . t('Font size controls to increase or decrease text size') . '</li>';
+      $output .= '<li>' . t('High contrast mode for better visibility') . '</li>';
+      $output .= '<li>' . t('Grayscale mode for color-blind users') . '</li>';
+      $output .= '</ul>';
+      
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Configuring the toolbar') . '</dt>';
+      $output .= '<dd>' . t('The toolbar can be configured in the <a href=":url">Accessibility Toolbar settings</a>. You can:', array(':url' => '/admin/config/user-interface/accessibility-toolbar')) . '</dd>';
+      $output .= '<ul>';
+      $output .= '<li>' . t('Enable/disable the toolbar for anonymous users') . '</li>';
+      $output .= '<li>' . t('Select which accessibility features to display') . '</li>';
+      $output .= '<li>' . t('Customize the appearance (colors, position)') . '</li>';
+      $output .= '</ul>';
+      $output .= '</dl>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function accessibility_toolbar_theme() {
+  return [
+    'accessibility_toolbar' => [
+      'variables' => [
+        'features' => [],
+        'toolbar_color' => '#000000',
+        'text_color' => '#ffffff',
+        'icon_color' => '#ffffff',
+        'button_color' => '#4A4848',
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function accessibility_toolbar_page_attachments(array &$attachments) {
+  // Only show for anonymous users
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $config = \Drupal::config('accessibility_toolbar.settings');
+    
+    // Check if the toolbar is enabled
+    if ($config->get('enabled')) {
+      $attachments['#attached']['library'][] = 'accessibility_toolbar/toolbar';
+    }
+  }
+}
+
+/**
+ * Implements hook_page_bottom().
+ */
+function accessibility_toolbar_page_bottom(array &$page_bottom) {
+  if (\Drupal::currentUser()->isAnonymous()) {
+    $config = \Drupal::config('accessibility_toolbar.settings');
+    if ($config->get('enabled')) {
+      $features = $config->get('features') ?? [];
+      
+      // Solo mostrar el toolbar si hay al menos una característica habilitada
+      if (!empty($features)) {
+        $page_bottom['accessibility_toolbar'] = [
+          '#theme' => 'accessibility_toolbar',
+          '#features' => $features,
+          '#toolbar_color' => $config->get('appearance.toolbar_color') ?: '#000000',
+          '#text_color' => $config->get('appearance.text_color') ?: '#ffffff',
+          '#icon_color' => $config->get('appearance.icon_color') ?: '#ffffff',
+          '#button_color' => $config->get('appearance.button_color') ?: '#4A4848',
+          '#weight' => 1000,
+          '#cache' => [
+            'tags' => ['config:accessibility_toolbar.settings'],
+          ],
+        ];
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function accessibility_toolbar_preprocess_html(&$variables) {
+  $config = \Drupal::config('accessibility_toolbar.settings');
+  if ($config->get('enabled')) {
+    $toolbar_color = $config->get('appearance.toolbar_color') ?: '#000000';
+    $variables['html_attributes']->setAttribute('data-toolbar-color', $toolbar_color);
+  }
+}

@@ -1,0 +1,27 @@
+uuid: 134b4d6e-0931-469c-bbd8-615c67045c8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: IYx37JlV-JCEqldSOUCsYu6gh4RpwuLDPpoeQcEF7mk
+id: seed_theme_cms_main_menu
+theme: seed_theme_cms
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

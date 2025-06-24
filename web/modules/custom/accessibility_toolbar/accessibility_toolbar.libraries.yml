@@ -1,0 +1,15 @@
+toolbar:
+  version: 1.x
+  css:
+    theme:
+      css/accessibility-toolbar.css: {}
+  js:
+    js/accessibility-toolbar.js: {}
+  dependencies:
+    - core/drupal
+
+admin:
+  version: 1.x
+  css:
+    theme:
+      css/accessibility-toolbar-admin.css: {}

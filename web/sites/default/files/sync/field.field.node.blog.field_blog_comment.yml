@@ -1,0 +1,35 @@
+uuid: 86ba8b12-7ee0-47a6-95d0-7c1ffc5410c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_blog_comment
+    - node.type.blog
+  module:
+    - comment
+_core:
+  default_config_hash: fAzuNJzvC9-lBvTveEG3cz_9mMVVPF6TPPisXHnxwc4
+id: node.blog.field_blog_comment
+field_name: field_blog_comment
+entity_type: node
+bundle: blog
+label: Comentarios
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 15
+  anonymous: 0
+  form_location: true
+  preview: 1
+field_type: comment

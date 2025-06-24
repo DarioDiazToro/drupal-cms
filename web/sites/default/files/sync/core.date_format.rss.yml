@@ -1,0 +1,10 @@
+uuid: 389b8f9a-bb28-4b7e-8d33-f051b65f7891
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6Rk-3PcauSenNpCSkJj6BmTcIShTlNZ2trwlnMI-pDk
+id: rss
+label: RSS
+locked: false
+pattern: r

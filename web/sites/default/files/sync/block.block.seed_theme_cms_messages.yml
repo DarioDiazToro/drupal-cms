@@ -1,0 +1,22 @@
+uuid: a06e1a5e-8cee-48b0-8d24-367f5bdefb2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seed_theme_cms
+_core:
+  default_config_hash: 5ra2HNIksWbp6AhPpTufTGSlgx2FR7RR_ssxdjgFg4I
+id: seed_theme_cms_messages
+theme: seed_theme_cms
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

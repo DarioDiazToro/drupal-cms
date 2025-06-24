@@ -1,0 +1,10 @@
+uuid: f9634fc2-baa1-452b-835f-4003c6e87dc2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AmrrP6QDW-9bu9t5RIyDd1pLmyHHMTsEwgpZCE3OOEE
+id: blog_comments
+label: 'Comentarios de blog'
+target_entity_type_id: node
+description: 'Tipo de comentarios para los tipos de contenido blogs'

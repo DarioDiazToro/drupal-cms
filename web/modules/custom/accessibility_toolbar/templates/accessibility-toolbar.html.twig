@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the accessibility toolbar.
+ *
+ * Available variables:
+ * - features: Array of enabled features.
+ * - toolbar_color: The toolbar background color.
+ * - text_color: The text color.
+ * - icon_color: The icon color.
+ * - button_color: The button background color.
+ */
+#}
+<div id="accessibility-toolbar" class="accessibility-toolbar" 
+     data-toolbar-color="{{ toolbar_color }}" 
+     data-text-color="{{ text_color }}"
+     data-icon-color="{{ icon_color }}"
+     data-button-color="{{ button_color }}">
+  <button type="button" class="accessibility-toggle" aria-label="{{ 'Accessibility options'|t }}">
+    <span class="visually-hidden">{{ 'Show accessibility options'|t }}</span>
+  </button>
+
+  <div class="accessibility-toolbar__items">
+    <ul class="accessibility-list">
+      {% if 'font_size' in features %}
+        <li>
+          <button type="button" class="accessibility-button increase">
+            <span>{{ 'Increase font size'|t }}</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="accessibility-button decrease">
+            <span>{{ 'Decrease font size'|t }}</span>
+          </button>
+        </li>
+      {% endif %}
+      
+      {% if 'high_contrast' in features %}
+        <li>
+          <button type="button" class="accessibility-button contrast">
+            <span>{{ 'High contrast'|t }}</span>
+          </button>
+        </li>
+      {% endif %}
+      
+      {% if 'grayscale' in features %}
+        <li>
+          <button type="button" class="accessibility-button grayscale">
+            <span>{{ 'Grayscale'|t }}</span>
+          </button>
+        </li>
+      {% endif %}
+      
+      <li>
+        <button type="button" class="accessibility-button reset">
+          <span>{{ 'Reset all'|t }}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

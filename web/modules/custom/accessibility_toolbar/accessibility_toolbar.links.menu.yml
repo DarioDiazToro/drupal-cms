@@ -1,0 +1,6 @@
+accessibility_toolbar.admin_settings:
+  title: 'Accessibility Toolbar Settings'
+  description: 'Configure the accessibility toolbar settings'
+  parent: system.admin_config_ui
+  route_name: accessibility_toolbar.settings
+  weight: 100
