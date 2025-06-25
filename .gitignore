@@ -1,5 +1,5 @@
 
-/vendor
+/vendor/
 /web/modules/contrib/*
 
 # Ignore paths that contain user-generated content.
@@ -8,3 +8,4 @@
 /web/sites/default/settings.local.php
 /web/core
 /web/themes/contrib/*
+/.ddev/
