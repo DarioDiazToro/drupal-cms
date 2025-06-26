@@ -9,6 +9,7 @@ dependencies:
     - taxonomy.vocabulary.authors
     - taxonomy.vocabulary.tags
   module:
+    - active_filters
     - add_content_by_bundle
     - better_exposed_filters
     - node
@@ -402,11 +403,46 @@ display:
                   sort_options: false
                   rewrite:
                     filter_rewrite_values: ''
-                    filter_rewrite_values_key: false
+                    filter_rewrite_values_key: true
                   collapsible: false
                   collapsible_disable_automatic_open: false
                   is_secondary: false
                   hide_label: false
+      arguments:
+        field_tags_target_id:
+          id: field_tags_target_id
+          table: node__field_tags
+          field: field_tags_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: entity_target_id
+          default_action: ignore
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: fixed
+          default_argument_options:
+            argument: ''
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
       filters:
         type:
           id: type
@@ -704,7 +740,7 @@ display:
           admin_label: ''
           plugin_id: boolean
           operator: '='
-          value: '1'
+          value: '0'
           group: 1
           exposed: true
           expose:
@@ -743,6 +779,7 @@ display:
       defaults:
         exposed_form: false
         relationships: false
+        arguments: false
         filters: false
         filter_groups: false
         header: false
@@ -774,6 +811,36 @@ display:
           class: button
           target: ''
           width: 600
+        active_filters:
+          id: active_filters
+          table: views
+          field: active_filters
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: active_filters
+          empty: true
+          title: 'Active Filters'
+          hide_title: false
+          grouped: false
+          clear_text: ''
+          filters:
+            created:
+              enable: true
+              removable: true
+              rewrite: ''
+            field_tags_target_id:
+              enable: true
+              removable: true
+              rewrite: ''
+            field_author_target_id:
+              enable: true
+              removable: true
+              rewrite: ''
+            field_editorial_value:
+              enable: true
+              removable: true
+              rewrite: "True|Editorial\r\nFalse|"
       exposed_block: false
       display_extenders: {  }
     cache_metadata:
@@ -977,9 +1044,9 @@ display:
           validate_options:
             bundles:
               authors: authors
-            access: false
+            access: true
             operation: view
-            transform: false
+            transform: true
           break_phrase: false
           not: false
       filters:

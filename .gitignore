@@ -9,3 +9,11 @@
 /web/core
 /web/themes/contrib/*
 /.ddev/
+/web/sites/default/files/2024-12
+/web/sites/default/files/media-icons
+/web/sites/default/files/2025-06
+/web/sites/default/files/php
+/web/sites/default/files/styles
+/web/sites/default/files/.htacces
+*.sql
+*.sql.gz

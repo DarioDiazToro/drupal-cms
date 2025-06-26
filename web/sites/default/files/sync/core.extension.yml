@@ -83,6 +83,7 @@ module:
   scheduler: 0
   scheduler_content_moderation_integration: 0
   search_api: 0
+  search_api_db: 0
   seed_cms_theme_installer: 0
   select_exposed: 0
   svg_image: 0

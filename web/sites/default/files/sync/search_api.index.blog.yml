@@ -1,15 +1,17 @@
-uuid: 4ac6ecd7-fbdd-4bfc-a161-07f508213d9f
+uuid: 1649347f-4c2d-45dc-a81e-5078dc019de3
 langcode: en
-status: false
+status: true
 dependencies:
   config:
     - field.storage.node.field_author
     - field.storage.node.field_editorial
     - field.storage.node.field_tags
+    - search_api.server.database
   module:
     - node
-id: blog_index
-name: 'Blog Index'
+    - taxonomy
+id: blog
+name: blog
 description: ''
 read_only: false
 field_settings:
@@ -17,23 +19,15 @@ field_settings:
     label: 'Authored on'
     datasource_id: 'entity:node'
     property_path: created
-    type: date
+    type: text
     dependencies:
       module:
         - node
-  field_author:
-    label: Autor
-    datasource_id: 'entity:node'
-    property_path: field_author
-    type: integer
-    dependencies:
-      config:
-        - field.storage.node.field_author
   field_editorial:
     label: Editorial
     datasource_id: 'entity:node'
     property_path: field_editorial
-    type: boolean
+    type: text
     dependencies:
       config:
         - field.storage.node.field_editorial
@@ -41,10 +35,20 @@ field_settings:
     label: Tags
     datasource_id: 'entity:node'
     property_path: field_tags
-    type: integer
+    type: text
     dependencies:
       config:
         - field.storage.node.field_tags
+  name:
+    label: 'Autor » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_author:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_author
+      module:
+        - taxonomy
 datasource_settings:
   'entity:node':
     bundles:
@@ -69,4 +73,4 @@ options:
   delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
-server: ''
+server: database
