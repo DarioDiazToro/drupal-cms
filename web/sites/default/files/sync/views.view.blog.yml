@@ -338,7 +338,7 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Apply
+          submit_button: 'Aplicar filtros'
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -372,8 +372,8 @@ display:
                 advanced:
                   sort_options: false
                   rewrite:
-                    filter_rewrite_values: ''
-                    filter_rewrite_values_key: false
+                    filter_rewrite_values: 'All|Todos los temas'
+                    filter_rewrite_values_key: true
                   collapsible: false
                   collapsible_disable_automatic_open: false
                   is_secondary: false
@@ -387,8 +387,8 @@ display:
                 advanced:
                   sort_options: false
                   rewrite:
-                    filter_rewrite_values: ''
-                    filter_rewrite_values_key: false
+                    filter_rewrite_values: 'All|Todos los autores'
+                    filter_rewrite_values_key: true
                   collapsible: false
                   collapsible_disable_automatic_open: false
                   is_secondary: false
@@ -697,7 +697,7 @@ display:
           exposed: true
           expose:
             operator_id: field_author_target_id_op
-            label: 'Autor (field_author)'
+            label: 'Autor '
             description: ''
             use_operator: false
             operator: field_author_target_id_op
@@ -745,7 +745,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Editorial (field_editorial)'
+            label: 'Editorial '
             description: ''
             use_operator: false
             operator: field_editorial_value_op
