@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * Implements hook_page_attachments().
+ */
+function blog_filter_autor_url_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'blog_filter_autor_url/cambiar_url_filtro_autor';
+}
+

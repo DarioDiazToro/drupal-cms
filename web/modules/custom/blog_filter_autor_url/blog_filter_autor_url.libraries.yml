@@ -1,0 +1,8 @@
+cambiar_url_filtro_autor:
+  # version: 1.x
+  js:
+    js/cambiar_url_filtro_autor.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

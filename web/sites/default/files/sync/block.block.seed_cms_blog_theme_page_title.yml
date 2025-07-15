@@ -1,0 +1,20 @@
+uuid: c161b817-093e-41df-a701-504ac5220e3a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - seed_cms_blog_theme
+_core:
+  default_config_hash: dY7_Wihz9ohfBPKP554_brUfc9nPaecShShmC_VTGRM
+id: seed_cms_blog_theme_page_title
+theme: seed_cms_blog_theme
+region: content_above
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

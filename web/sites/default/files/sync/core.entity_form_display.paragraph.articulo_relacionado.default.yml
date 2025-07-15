@@ -1,0 +1,30 @@
+uuid: 71e550d6-11af-4373-939f-029c4e9d0c5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.articulo_relacionado.field_te_pude_interesar
+    - paragraphs.paragraphs_type.articulo_relacionado
+  module:
+    - tagify
+id: paragraph.articulo_relacionado.default
+targetEntityType: paragraph
+bundle: articulo_relacionado
+mode: default
+content:
+  field_te_pude_interesar:
+    type: tagify_entity_reference_autocomplete_widget
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
+      suggestions_dropdown: 1
+      show_entity_id: 0
+      show_info_label: 0
+      info_label: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

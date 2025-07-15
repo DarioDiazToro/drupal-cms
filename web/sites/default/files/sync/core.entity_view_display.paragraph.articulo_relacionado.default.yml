@@ -1,0 +1,22 @@
+uuid: 5f06a85e-40b3-4615-8d1c-f3fd97fb1b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.articulo_relacionado.field_te_pude_interesar
+    - paragraphs.paragraphs_type.articulo_relacionado
+id: paragraph.articulo_relacionado.default
+targetEntityType: paragraph
+bundle: articulo_relacionado
+mode: default
+content:
+  field_te_pude_interesar:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

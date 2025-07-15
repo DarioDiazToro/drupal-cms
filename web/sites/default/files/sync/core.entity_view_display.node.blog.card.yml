@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.blog.field_editorial
     - field.field.node.blog.field_featured_image
     - field.field.node.blog.field_tags
+    - field.field.node.blog.field_te_puede_interesar
     - node.type.blog
   module:
     - layout_builder
@@ -49,6 +50,7 @@ hidden:
   field_content: true
   field_editorial: true
   field_tags: true
+  field_te_puede_interesar: true
   layout_builder__layout: true
   links: true
   search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: ce385516-0345-4b0f-8a37-a216a1dea106
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_name
+    - taxonomy.vocabulary.authors
+  module:
+    - text
+id: taxonomy_term.authors.field_name
+field_name: field_name
+entity_type: taxonomy_term
+bundle: authors
+label: Nombre
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

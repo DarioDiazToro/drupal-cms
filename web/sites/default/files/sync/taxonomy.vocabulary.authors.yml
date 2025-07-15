@@ -1,4 +1,4 @@
-uuid: b3392930-d5ec-423e-8907-2d20aa3f8b6c
+uuid: 62eb4d19-a34f-4c92-b24f-79e6f44cb5c6
 langcode: en
 status: true
 dependencies:
@@ -20,6 +20,6 @@ third_party_settings:
     unpublish_revision: false
 name: authors
 vid: authors
-description: null
+description: 'autores de la publicacion'
 weight: 0
 new_revision: false

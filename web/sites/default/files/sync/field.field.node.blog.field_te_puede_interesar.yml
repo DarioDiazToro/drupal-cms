@@ -1,0 +1,39 @@
+uuid: a25dc0a0-096f-424f-a47c-81919512c43e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_te_puede_interesar
+    - node.type.blog
+    - paragraphs.paragraphs_type.articulo_relacionado
+    - paragraphs.paragraphs_type.texto
+  module:
+    - entity_reference_revisions
+id: node.blog.field_te_puede_interesar
+field_name: field_te_puede_interesar
+entity_type: node
+bundle: blog
+label: 'Te puede interesar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      articulo_relacionado: articulo_relacionado
+      texto: texto
+    negate: 0
+    target_bundles_drag_drop:
+      articulo_relacionado:
+        weight: 3
+        enabled: true
+      bloque_de_contenido:
+        weight: 4
+        enabled: true
+      texto:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

@@ -1,0 +1,22 @@
+uuid: 5b5baadb-136e-4f39-9d61-830a74d97e26
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: alias_para_autores_del_blog
+label: 'Alias para autores del blog'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'blog/autor/[term:name]'
+selection_criteria:
+  69692f1d-288c-482a-aa19-68c265854185:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 69692f1d-288c-482a-aa19-68c265854185
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      authors: authors
+selection_logic: and
+weight: -5
+relationships: {  }

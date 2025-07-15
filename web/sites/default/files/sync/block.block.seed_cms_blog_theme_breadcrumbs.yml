@@ -1,0 +1,22 @@
+uuid: 406f3946-e555-4a28-a0ce-8e24dbcec430
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seed_cms_blog_theme
+_core:
+  default_config_hash: rUKMsaj4XvIHtU3kRiHIA6Rkn4IHzCkhTiUZudMkp14
+id: seed_cms_blog_theme_breadcrumbs
+theme: seed_cms_blog_theme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

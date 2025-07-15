@@ -1,0 +1,22 @@
+uuid: 51b38aea-9dea-411c-8102-d55df95dd75e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - seed_cms_blog_theme
+_core:
+  default_config_hash: 5VBXsyvJSTQNtrh86WK8GN_FCaRtK03D1fjfZQnUvtU
+id: seed_cms_blog_theme_powered
+theme: seed_cms_blog_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

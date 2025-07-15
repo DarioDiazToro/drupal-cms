@@ -1,0 +1,7 @@
+name: Blog Filter Autor URL
+type: module
+description: 'Módulo que cambia la URL del filtro por autor en la vista del blog.'
+core_version_requirement: ^11 || ^10
+package: Custom
+dependencies:
+  - drupal:views
