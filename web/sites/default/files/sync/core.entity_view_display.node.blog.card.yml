@@ -27,6 +27,11 @@ targetEntityType: node
 bundle: blog
 mode: card
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_description:
     type: basic_string
     label: hidden

@@ -170,6 +170,7 @@ content:
     weight: 3
     region: content
 hidden:
+  addtoany: true
   field_author: true
   field_blog_comment: true
   field_description: true

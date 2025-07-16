@@ -4,6 +4,7 @@ module:
   accessibility_toolbar: 0
   active_filters: 0
   add_content_by_bundle: 0
+  addtoany: 0
   announcements_feed: 0
   automated_cron: 0
   automatic_updates: 0

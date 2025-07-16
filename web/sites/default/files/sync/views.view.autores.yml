@@ -348,7 +348,7 @@ display:
           validate_options:
             bundles:
               authors: authors
-            access: true
+            access: false
             operation: view
             multiple: 0
           break_phrase: false
