@@ -11,7 +11,7 @@ _core:
 id: seed_theme_cms_content
 theme: seed_theme_cms
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: system_main_block
 settings:
