@@ -1,0 +1,21 @@
+uuid: 7e1ce1bf-6f60-4b0e-bb87-18db7a0ac185
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_contenido_destacado_relaci
+field_name: field_contenido_destacado_relaci
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

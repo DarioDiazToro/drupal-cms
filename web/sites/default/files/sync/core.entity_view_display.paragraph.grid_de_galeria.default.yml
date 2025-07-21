@@ -1,0 +1,56 @@
+uuid: 5a8bd1b7-fc38-4805-9980-0d01c67b2832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_de_galeria.field_descripcion
+    - field.field.paragraph.grid_de_galeria.field_enlace
+    - field.field.paragraph.grid_de_galeria.field_imagen
+    - field.field.paragraph.grid_de_galeria.field_titulo
+    - paragraphs.paragraphs_type.grid_de_galeria
+  module:
+    - link
+    - text
+id: paragraph.grid_de_galeria.default
+targetEntityType: paragraph
+bundle: grid_de_galeria
+mode: default
+content:
+  field_descripcion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_enlace:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_titulo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

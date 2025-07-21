@@ -1,0 +1,19 @@
+uuid: 5c528608-7997-4afb-a557-138d29708dc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.grid_de_galeria
+id: paragraph.grid_de_galeria.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: grid_de_galeria
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

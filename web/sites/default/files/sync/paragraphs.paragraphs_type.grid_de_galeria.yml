@@ -1,0 +1,10 @@
+uuid: b42de93c-3de0-4b16-8b00-a9b5b5943221
+langcode: en
+status: true
+dependencies: {  }
+id: grid_de_galeria
+label: 'Grid de Galería'
+icon_uuid: null
+icon_default: null
+description: 'Un grid de hasta 6 imágenes con título y un enlace "Ver más".'
+behavior_plugins: {  }

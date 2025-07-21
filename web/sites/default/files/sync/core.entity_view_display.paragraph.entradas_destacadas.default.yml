@@ -1,0 +1,21 @@
+uuid: 2d5b9477-ac0d-49e5-bf91-192677557e4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.entradas_destacadas.field_entradas_destacadas
+    - paragraphs.paragraphs_type.entradas_destacadas
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.entradas_destacadas.default
+targetEntityType: paragraph
+bundle: entradas_destacadas
+mode: default
+content: {  }
+hidden:
+  field_entradas_destacadas: true
+  search_api_excerpt: true

@@ -1,0 +1,43 @@
+uuid: 1554541d-ac30-495e-a5af-e2d3be8b7550
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_componentes_de_pagina
+    - node.type.page
+    - paragraphs.paragraphs_type.grid_de_galeria
+  module:
+    - entity_reference_revisions
+id: node.page.field_componentes_de_pagina
+field_name: field_componentes_de_pagina
+entity_type: node
+bundle: page
+label: 'Componentes de Página'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      grid_de_galeria: grid_de_galeria
+    negate: 0
+    target_bundles_drag_drop:
+      articulo_relacionado:
+        weight: 6
+        enabled: false
+      entradas_destacadas:
+        weight: 7
+        enabled: false
+      grid_de_galeria:
+        weight: 8
+        enabled: true
+      imagen_de_galeria:
+        weight: 9
+        enabled: false
+      texto:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

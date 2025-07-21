@@ -1,0 +1,30 @@
+uuid: dbca4df5-21a0-44e7-abbb-366a17a9e75c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.entradas_destacadas.field_entradas_destacadas
+    - paragraphs.paragraphs_type.entradas_destacadas
+  module:
+    - tagify
+id: paragraph.entradas_destacadas.default
+targetEntityType: paragraph
+bundle: entradas_destacadas
+mode: default
+content:
+  field_entradas_destacadas:
+    type: tagify_entity_reference_autocomplete_widget
+    weight: 0
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      placeholder: ''
+      suggestions_dropdown: 1
+      show_entity_id: 0
+      show_info_label: 0
+      info_label: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -46,6 +46,7 @@
         "drupal/search_api_db": "^1.38",
         "drupal/token": "^1.15",
         "drupal/views_autocomplete_filters": "^2.0",
+        "drupal/views_field_view": "^1.0@beta",
         "drupal/views_filters_summary": "^3.1",
         "drupal/views_selective_filters": "^2.0@alpha",
         "drupal/views_url_path_arguments": "^1.3",

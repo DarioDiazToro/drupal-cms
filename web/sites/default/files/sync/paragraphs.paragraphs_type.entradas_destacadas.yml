@@ -1,0 +1,10 @@
+uuid: 5c3827a0-7fc4-434d-97ef-76559677ed0c
+langcode: en
+status: true
+dependencies: {  }
+id: entradas_destacadas
+label: 'Selección de Destacados'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.blog.field_author
     - field.field.node.blog.field_blog_comment
+    - field.field.node.blog.field_contenido_destacado_relaci
     - field.field.node.blog.field_content
     - field.field.node.blog.field_description
     - field.field.node.blog.field_editorial
@@ -44,9 +45,11 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   content_moderation_control: true
   field_author: true
   field_blog_comment: true
+  field_contenido_destacado_relaci: true
   field_content: true
   field_editorial: true
   field_tags: true

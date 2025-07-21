@@ -1,0 +1,22 @@
+uuid: 5fba02c6-099b-4d79-9f3c-e352b1f8151b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descripcion
+    - paragraphs.paragraphs_type.grid_de_galeria
+  module:
+    - text
+id: paragraph.grid_de_galeria.field_descripcion
+field_name: field_descripcion
+entity_type: paragraph
+bundle: grid_de_galeria
+label: Descripción
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
