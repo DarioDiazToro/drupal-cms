@@ -1,0 +1,41 @@
+name: 'Galería de Imágenes'
+description: 'Sistema completo de galerías de imágenes con categorías, formatos de visualización y filtros avanzados.'
+
+install:
+  - node
+  - field
+  - image
+  - taxonomy
+  - views
+  - text
+  - colorbox # o photoswipe
+  - views_bootstrap
+
+config:
+  strict: false
+  import:
+    node:
+      - node.type.image_gallery
+    taxonomy:
+      - taxonomy.vocabulary.gallery_categories
+    field:
+      - field.storage.node.field_gallery_images
+      - field.field.node.image_gallery.field_gallery_images
+      - field.storage.node.field_gallery_category
+      - field.field.node.image_gallery.field_gallery_category
+      - field.storage.node.field_gallery_date
+      - field.field.node.image_gallery.field_gallery_date
+      - field.storage.node.field_featured_gallery
+      - field.field.node.image_gallery.field_featured_gallery
+    image:
+      - image.style.gallery_thumbnail
+      - image.style.gallery_medium
+      - image.style.gallery_large
+    views:
+      - views.view.gallery_listing
+      - views.view.gallery_detail
+  content:
+    taxonomy:
+      - gallery_categories
+    node:
+      - sample_galleries

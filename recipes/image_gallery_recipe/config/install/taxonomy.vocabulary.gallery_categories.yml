@@ -1,0 +1,5 @@
+vid: gallery_categories
+name: 'Categorías de Galería'
+description: 'Categorías para organizar las galerías de imágenes.'
+hierarchy: 0
+module: taxonomy

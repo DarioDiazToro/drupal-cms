@@ -1,0 +1,18 @@
+name: gallery_detail
+description: 'Detalle de galería de imágenes'
+base_table: node_field_data
+display:
+  - display_plugin: page
+    display_title: 'Detalle de galería'
+    path: 'galeria/[nid]'
+    format: gallery
+    fields:
+      - field_gallery_images
+      - title
+      - body
+      - field_gallery_category
+      - field_gallery_date
+      - field_featured_gallery
+    lightbox: true
+    navigation: true
+    metadata: true

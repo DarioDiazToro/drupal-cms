@@ -1,0 +1,11 @@
+field_name: field_gallery_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+  handler: default
+  handler_settings:
+    target_bundles:
+      - gallery_categories
+cardinality: 3
+translatable: true

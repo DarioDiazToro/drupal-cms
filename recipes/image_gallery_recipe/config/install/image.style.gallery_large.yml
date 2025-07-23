@@ -1,0 +1,7 @@
+name: gallery_large
+label: 'Imagen grande de galería'
+effects:
+  - name: image_scale
+    data:
+      width: 1200
+      height: 900

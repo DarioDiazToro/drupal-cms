@@ -1,0 +1,7 @@
+name: gallery_medium
+label: 'Imagen mediana de galería'
+effects:
+  - name: image_scale
+    data:
+      width: 800
+      height: 600

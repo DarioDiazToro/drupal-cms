@@ -1,0 +1,8 @@
+name: gallery_thumbnail
+label: 'Miniatura de galería'
+effects:
+  - name: image_crop
+    data:
+      width: 300
+      height: 200
+      anchor: center

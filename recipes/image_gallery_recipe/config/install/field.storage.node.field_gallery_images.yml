@@ -1,0 +1,10 @@
+field_name: field_gallery_images
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  target_type: file
+  display_field: true
+  display_default: true
+cardinality: -1
+translatable: true

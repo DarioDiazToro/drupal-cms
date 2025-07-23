@@ -1,0 +1,13 @@
+type: image_gallery
+name: 'Galería de Imágenes'
+description: 'Galería organizada de imágenes con categorías y formatos avanzados.'
+help: 'Utiliza este tipo para crear galerías fotográficas.'
+new_revision: true
+display_submitted: true
+fields:
+  - title
+  - body
+  - field_gallery_images
+  - field_gallery_category
+  - field_gallery_date
+  - field_featured_gallery

@@ -1,0 +1,12 @@
+field_name: field_gallery_category
+entity_type: node
+bundle: image_gallery
+label: 'Categoría de la galería'
+description: 'Selecciona hasta 3 categorías para la galería.'
+required: true
+settings:
+  handler: default
+  handler_settings:
+    target_bundles:
+      - gallery_categories
+cardinality: 3

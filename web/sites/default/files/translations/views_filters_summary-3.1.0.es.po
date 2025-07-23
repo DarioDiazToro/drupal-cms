@@ -1,0 +1,26 @@
+# Spanish translation of Views Exposed Filters Summary (3.1.0)
+# Copyright (c) 2025 by the Spanish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Views Exposed Filters Summary (3.1.0)\n"
+"POT-Creation-Date: 2025-06-09 11:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Views"
+msgstr "Vistas"
+msgid "Field name"
+msgstr "Nombre del campo"
+msgid "Filters"
+msgstr "Filtros"
+msgid "Plural"
+msgstr "Plural"
+msgid "X"
+msgstr "X"
+msgid "The shown text of the result summary area"
+msgstr "El texto mostrado en el área de resumen de resultados"

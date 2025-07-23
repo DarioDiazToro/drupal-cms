@@ -1,0 +1,21 @@
+name: gallery_listing
+description: 'Listado de galerías de imágenes'
+base_table: node_field_data
+display:
+  - display_plugin: page
+    display_title: 'Listado de galerías'
+    path: 'galerias'
+    format: grid
+    items_per_page: 12
+    fields:
+      - field_gallery_images
+      - title
+      - field_gallery_category
+      - field_gallery_date
+    filters:
+      - field_gallery_category
+      - field_gallery_date
+    sort:
+      - field_gallery_date DESC
+    exposed_filters: true
+    responsive: true

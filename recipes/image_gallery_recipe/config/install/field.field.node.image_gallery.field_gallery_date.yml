@@ -1,0 +1,8 @@
+field_name: field_gallery_date
+entity_type: node
+bundle: image_gallery
+label: 'Fecha de creación'
+description: 'Fecha de creación de la galería.'
+required: true
+settings: {}
+cardinality: 1

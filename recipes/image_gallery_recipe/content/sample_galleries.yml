@@ -1,0 +1,35 @@
+sample_galleries:
+  - title: 'Paisajes Naturales'
+    body: 'Galería de paisajes de naturaleza.'
+    field_gallery_category: ['Naturaleza']
+    field_gallery_images:
+      - file: 'assets/sample_images/naturaleza1.jpg'
+        alt: 'Montaña al amanecer'
+        title: 'Montaña'
+        description: 'Vista de montaña al amanecer'
+      - file: 'assets/sample_images/naturaleza2.jpg'
+        alt: 'Río en el bosque'
+        title: 'Río'
+        description: 'Río rodeado de árboles'
+    field_gallery_date: '2025-07-01'
+    field_featured_gallery: true
+  - title: 'Arquitectura Moderna'
+    body: 'Galería de arquitectura contemporánea.'
+    field_gallery_category: ['Arquitectura']
+    field_gallery_images:
+      - file: 'assets/sample_images/arquitectura1.jpg'
+        alt: 'Edificio moderno'
+        title: 'Edificio'
+        description: 'Fachada de edificio moderno'
+    field_gallery_date: '2025-07-10'
+    field_featured_gallery: false
+  - title: 'Retratos Urbanos'
+    body: 'Galería de retratos en ambientes urbanos.'
+    field_gallery_category: ['Retratos', 'Eventos']
+    field_gallery_images:
+      - file: 'assets/sample_images/retratos1.jpg'
+        alt: 'Retrato en la ciudad'
+        title: 'Retrato'
+        description: 'Persona en entorno urbano'
+    field_gallery_date: '2025-07-15'
+    field_featured_gallery: false

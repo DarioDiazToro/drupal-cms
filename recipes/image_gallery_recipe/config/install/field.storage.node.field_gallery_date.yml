@@ -1,0 +1,7 @@
+field_name: field_gallery_date
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+cardinality: 1
+translatable: true

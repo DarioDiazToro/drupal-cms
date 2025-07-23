@@ -1,0 +1,8 @@
+field_name: field_featured_gallery
+entity_type: node
+bundle: image_gallery
+label: 'Galería destacada'
+description: 'Marca si la galería debe aparecer como destacada.'
+required: false
+settings: {}
+cardinality: 1

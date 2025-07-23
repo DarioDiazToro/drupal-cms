@@ -1,0 +1,6 @@
+field_name: field_featured_gallery
+entity_type: node
+type: boolean
+settings: {}
+cardinality: 1
+translatable: true
