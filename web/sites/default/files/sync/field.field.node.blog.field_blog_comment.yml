@@ -13,7 +13,7 @@ id: node.blog.field_blog_comment
 field_name: field_blog_comment
 entity_type: node
 bundle: blog
-label: Comentarios
+label: Comments
 description: ''
 required: false
 translatable: false

@@ -12,7 +12,7 @@ id: node.blog.field_contenido_destacado_relaci
 field_name: field_contenido_destacado_relaci
 entity_type: node
 bundle: blog
-label: 'Contenido Destacado Relacionado'
+label: 'Featured Related Content'
 description: ''
 required: false
 translatable: false
@@ -31,6 +31,9 @@ settings:
       entradas_destacadas:
         weight: 5
         enabled: true
+      grid_de_galeria:
+        weight: 7
+        enabled: false
       texto:
         weight: 6
         enabled: false

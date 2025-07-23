@@ -1,5 +1,5 @@
 uuid: 1e06afc8-4309-4007-89d2-1b1dce9119e4
-langcode: en
+langcode: es
 status: false
 dependencies:
   config:
@@ -22,7 +22,7 @@ base_field: vid
 display:
   default:
     id: default
-    display_title: Master
+    display_title: Máster
     display_plugin: default
     position: 0
     display_options:
@@ -37,7 +37,7 @@ display:
           admin_label: ''
           entity_type: media
           plugin_id: bulk_form
-          label: 'Bulk update'
+          label: 'Actualización masiva'
           exclude: false
           alter:
             alter_text: false
@@ -78,7 +78,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Acción
           include_exclude: exclude
           selected_actions: {  }
         name:
@@ -91,7 +91,7 @@ display:
           entity_type: media
           entity_field: name
           plugin_id: field
-          label: 'Media Name'
+          label: 'Nombre multimedia'
           exclude: false
           alter:
             alter_text: false
@@ -156,7 +156,7 @@ display:
           entity_type: media
           entity_field: bundle
           plugin_id: field
-          label: 'Media type'
+          label: 'Tipos multimedia'
           exclude: false
           alter:
             alter_text: false
@@ -221,7 +221,7 @@ display:
           entity_type: media
           entity_field: uid
           plugin_id: field
-          label: Author
+          label: Autor
           exclude: false
           alter:
             alter_text: false
@@ -286,7 +286,7 @@ display:
           entity_type: media
           entity_field: status
           plugin_id: field
-          label: Status
+          label: Estado
           exclude: false
           alter:
             alter_text: false
@@ -331,8 +331,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Unpublished
-            format_custom_true: Published
+            format_custom_false: 'Sin publicar'
+            format_custom_true: Publicado
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -353,7 +353,7 @@ display:
           entity_type: media
           entity_field: publish_on
           plugin_id: field
-          label: 'Publish on'
+          label: 'Publicar en'
           exclude: false
           alter:
             alter_text: false
@@ -420,7 +420,7 @@ display:
           entity_type: media
           entity_field: unpublish_on
           plugin_id: field
-          label: 'Unpublish on'
+          label: 'Quitar publicación en'
           exclude: false
           alter:
             alter_text: false
@@ -486,7 +486,7 @@ display:
           admin_label: ''
           entity_type: media
           plugin_id: entity_operations
-          label: Operations
+          label: Operaciones
           exclude: false
           alter:
             alter_text: false
@@ -536,25 +536,25 @@ display:
           total_pages: null
           id: 0
           tags:
-            next: 'next ›'
-            previous: '‹ previous'
-            first: '« first'
-            last: 'last »'
+            next: 'siguiente ›'
+            previous: '‹ anterior'
+            first: '« primero'
+            last: 'último »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementos por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Todo -'
             offset: false
-            offset_label: Offset
+            offset_label: Desplazamiento
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtro
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -635,7 +635,7 @@ display:
           exposed: true
           expose:
             operator_id: name_op
-            label: 'Media name'
+            label: 'Nombre del elemento multimedia'
             description: ''
             use_operator: false
             operator: name_op
@@ -678,7 +678,7 @@ display:
           exposed: true
           expose:
             operator_id: bundle_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: bundle_op
@@ -721,7 +721,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: Status
+            label: Estado
             description: ''
             use_operator: false
             operator: status_op
@@ -737,7 +737,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Estado de publicación'
             description: ''
             identifier: status
             optional: true
@@ -748,11 +748,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publicado
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Sin publicar'
                 operator: '='
                 value: '0'
         langcode:
@@ -771,7 +771,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Idioma
             description: ''
             use_operator: false
             operator: langcode_op
@@ -1035,7 +1035,7 @@ display:
       tags: {  }
   user_page:
     id: user_page
-    display_title: User
+    display_title: Usuario
     display_plugin: page
     position: 2
     display_options:

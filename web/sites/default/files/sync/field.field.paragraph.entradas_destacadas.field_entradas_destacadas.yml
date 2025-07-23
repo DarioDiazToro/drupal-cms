@@ -10,7 +10,7 @@ id: paragraph.entradas_destacadas.field_entradas_destacadas
 field_name: field_entradas_destacadas
 entity_type: paragraph
 bundle: entradas_destacadas
-label: 'Entradas Destacadas'
+label: 'Featured Posts'
 description: ''
 required: false
 translatable: false

@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: articulo_relacionado
-label: 'articulo relacionado'
+label: 'Related article'
 icon_uuid: null
 icon_default: null
 description: ''

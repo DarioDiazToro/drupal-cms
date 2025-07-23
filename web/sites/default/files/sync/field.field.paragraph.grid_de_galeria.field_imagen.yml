@@ -10,7 +10,7 @@ id: paragraph.grid_de_galeria.field_imagen
 field_name: field_imagen
 entity_type: paragraph
 bundle: grid_de_galeria
-label: Fotos
+label: Photos
 description: ''
 required: false
 translatable: false

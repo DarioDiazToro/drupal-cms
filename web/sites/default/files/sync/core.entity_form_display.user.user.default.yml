@@ -24,4 +24,5 @@ content:
     weight: 6
     region: content
 hidden:
+  langcode: true
   path: true

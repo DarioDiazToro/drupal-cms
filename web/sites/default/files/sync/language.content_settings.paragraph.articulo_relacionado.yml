@@ -1,0 +1,11 @@
+uuid: bfbe713c-4221-45ef-9c2c-148882c10d3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.articulo_relacionado
+id: paragraph.articulo_relacionado
+target_entity_type_id: paragraph
+target_bundle: articulo_relacionado
+default_langcode: site_default
+language_alterable: true

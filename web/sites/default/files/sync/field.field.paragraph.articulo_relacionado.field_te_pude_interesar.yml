@@ -10,7 +10,7 @@ id: paragraph.articulo_relacionado.field_te_pude_interesar
 field_name: field_te_pude_interesar
 entity_type: paragraph
 bundle: articulo_relacionado
-label: 'Te puede interesar'
+label: 'You might be interested'
 description: ''
 required: false
 translatable: false

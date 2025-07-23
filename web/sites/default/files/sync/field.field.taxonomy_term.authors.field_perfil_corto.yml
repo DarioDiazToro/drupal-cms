@@ -9,7 +9,7 @@ id: taxonomy_term.authors.field_perfil_corto
 field_name: field_perfil_corto
 entity_type: taxonomy_term
 bundle: authors
-label: 'perfil corto'
+label: 'Short profile'
 description: ''
 required: true
 translatable: false

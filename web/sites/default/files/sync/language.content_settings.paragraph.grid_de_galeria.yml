@@ -1,0 +1,11 @@
+uuid: b9f1e944-2a51-4227-9cc9-65a6d6d1332b
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.grid_de_galeria
+id: paragraph.grid_de_galeria
+target_entity_type_id: paragraph
+target_bundle: grid_de_galeria
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,11 @@
+uuid: 53fdfae3-ebca-45b9-b39b-99451e02c74a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.entradas_destacadas
+id: paragraph.entradas_destacadas
+target_entity_type_id: paragraph
+target_bundle: entradas_destacadas
+default_langcode: site_default
+language_alterable: true

@@ -1,10 +1,10 @@
 uuid: 354c5e74-1e98-431d-a525-5524e008c2e7
-langcode: en
+langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: zb5fw3XvVMA3iaOX1CO7qm1YLv0IzThvz3HQvDcsLA8
 id: styling
-label: Styling
+label: 'Aplicando estilo'
 description: ''
 weight: 5

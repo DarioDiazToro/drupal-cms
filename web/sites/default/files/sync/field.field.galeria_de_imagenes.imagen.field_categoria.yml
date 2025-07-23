@@ -1,0 +1,29 @@
+uuid: 7656599b-c002-4448-849d-b19e410d9d07
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.galeria_de_imagenes.imagen
+    - field.storage.galeria_de_imagenes.field_categoria
+    - taxonomy.vocabulary.categorias_de_galeria
+id: galeria_de_imagenes.imagen.field_categoria
+field_name: field_categoria
+entity_type: galeria_de_imagenes
+bundle: imagen
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_de_galeria: categorias_de_galeria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+uuid: f7d00a77-881a-4b9d-8af5-8f77f84f8916
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.texto
+id: paragraph.texto
+target_entity_type_id: paragraph
+target_bundle: texto
+default_langcode: site_default
+language_alterable: true

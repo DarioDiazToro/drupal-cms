@@ -13,7 +13,7 @@ id: node.blog.field_te_puede_interesar
 field_name: field_te_puede_interesar
 entity_type: node
 bundle: blog
-label: 'Te puede interesar'
+label: 'You might be interested'
 description: ''
 required: false
 translatable: false
@@ -30,9 +30,12 @@ settings:
       articulo_relacionado:
         weight: 3
         enabled: true
-      bloque_de_contenido:
-        weight: 4
-        enabled: true
+      entradas_destacadas:
+        weight: 6
+        enabled: false
+      grid_de_galeria:
+        weight: 7
+        enabled: false
       texto:
         weight: 4
         enabled: true

@@ -1,6 +1,6 @@
 _core:
   default_config_hash: KHFceIX-fbXlWawKfwtwtF54lAHxnYxy1yQbxam4p5k
-langcode: en
+langcode: es
 interval: 60000
 only_on_form_change: false
 active_on:
