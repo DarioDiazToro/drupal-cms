@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.grid_de_galeria.field_descripcion
+    - field.field.paragraph.grid_de_galeria.field_enlace
     - field.field.paragraph.grid_de_galeria.field_imagen
+    - field.field.paragraph.grid_de_galeria.field_titulo
     - paragraphs.paragraphs_type.grid_de_galeria
   module:
+    - link
     - media_library
     - text
 id: paragraph.grid_de_galeria.default
@@ -22,12 +25,28 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_enlace:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
   field_imagen:
     type: media_library_widget
     weight: 4
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
 hidden:
   created: true

@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies: {  }
 id: grid_de_galeria
-label: 'Gallery Grid'
+label: 'Grid de Galería'
 icon_uuid: null
 icon_default: null
-description: "A grid of up to 6 images with a title and a 'View more' link."
+description: 'Un grid de hasta 6 imágenes con título y un enlace "Ver más".'
 behavior_plugins: {  }

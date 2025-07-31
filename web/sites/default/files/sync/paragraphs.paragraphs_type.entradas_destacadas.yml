@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: entradas_destacadas
-label: 'Featured Posts'
+label: 'Featured Selection'
 icon_uuid: null
 icon_default: null
 description: ''

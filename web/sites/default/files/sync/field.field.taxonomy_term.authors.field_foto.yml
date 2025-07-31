@@ -10,7 +10,7 @@ id: taxonomy_term.authors.field_foto
 field_name: field_foto
 entity_type: taxonomy_term
 bundle: authors
-label: Photo
+label: Foto
 description: ''
 required: true
 translatable: false

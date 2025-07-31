@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.page.field_componentes_de_pagina
     - field.field.node.page.field_content
     - field.field.node.page.field_description
     - field.field.node.page.field_featured_image
@@ -42,6 +43,7 @@ content:
     region: content
 hidden:
   content_moderation_control: true
+  field_componentes_de_pagina: true
   field_content: true
   field_tags: true
   langcode: true

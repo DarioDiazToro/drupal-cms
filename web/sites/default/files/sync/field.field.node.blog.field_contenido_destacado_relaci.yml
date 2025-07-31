@@ -12,7 +12,7 @@ id: node.blog.field_contenido_destacado_relaci
 field_name: field_contenido_destacado_relaci
 entity_type: node
 bundle: blog
-label: 'Featured Related Content'
+label: 'Related Featured Content'
 description: ''
 required: false
 translatable: false

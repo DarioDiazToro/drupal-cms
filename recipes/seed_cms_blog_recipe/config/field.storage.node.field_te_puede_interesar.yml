@@ -1,0 +1,21 @@
+# uuid: 1217a4fa-1c38-4799-a885-c9ae061e9862
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_te_puede_interesar
+field_name: field_te_puede_interesar
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

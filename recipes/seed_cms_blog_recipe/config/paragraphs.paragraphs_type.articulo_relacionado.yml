@@ -1,0 +1,10 @@
+# uuid: e11f015e-b96b-456a-a295-5a946771525f
+langcode: en
+status: true
+dependencies: {  }
+id: articulo_relacionado
+label: 'articulo relacionado'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,33 @@
+# uuid: c0a613a5-d40b-4dac-9a31-68722ef84a52
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.entradas_destacadas
+  module:
+    - node
+    - views
+  theme:
+    - seed_theme_cms
+id: seed_theme_cms_views_block__entradas_destacadas_block_1
+theme: seed_theme_cms
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:entradas_destacadas-block_1'
+settings:
+  id: 'views_block:entradas_destacadas-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      blog: blog

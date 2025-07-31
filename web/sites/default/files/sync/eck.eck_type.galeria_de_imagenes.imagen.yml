@@ -1,9 +1,0 @@
-uuid: eab9b43e-1953-462c-8471-e5d1407b695d
-langcode: en
-status: true
-dependencies:
-  config:
-    - eck.eck_entity_type.galeria_de_imagenes
-name: Image
-type: imagen
-description: ''

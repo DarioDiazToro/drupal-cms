@@ -13,7 +13,7 @@ id: node.blog.field_te_puede_interesar
 field_name: field_te_puede_interesar
 entity_type: node
 bundle: blog
-label: 'You might be interested'
+label: 'You may also like'
 description: ''
 required: false
 translatable: false

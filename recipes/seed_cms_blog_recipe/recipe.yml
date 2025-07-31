@@ -7,4 +7,7 @@ recipes:
 install:
   - seed_cms_theme_installer
   - accessibility_toolbar
+  - blog_filter_autor_url 
+  - paragraphs
+  - addtoany
   # - theme:seed_cms_blog_theme

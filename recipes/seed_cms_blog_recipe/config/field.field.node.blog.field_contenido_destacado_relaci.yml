@@ -1,0 +1,40 @@
+# uuid: dac4104e-1870-4390-b790-afa530ecb121
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_destacado_relaci
+    - node.type.blog
+    - paragraphs.paragraphs_type.entradas_destacadas
+  module:
+    - entity_reference_revisions
+id: node.blog.field_contenido_destacado_relaci
+field_name: field_contenido_destacado_relaci
+entity_type: node
+bundle: blog
+label: 'Related Featured Content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      entradas_destacadas: entradas_destacadas
+    negate: 0
+    target_bundles_drag_drop:
+      articulo_relacionado:
+        weight: 4
+        enabled: false
+      entradas_destacadas:
+        weight: 5
+        enabled: true
+      grid_de_galeria:
+        weight: 7
+        enabled: false
+      texto:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

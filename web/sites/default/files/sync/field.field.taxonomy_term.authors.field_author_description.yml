@@ -11,7 +11,7 @@ id: taxonomy_term.authors.field_author_description
 field_name: field_author_description
 entity_type: taxonomy_term
 bundle: authors
-label: 'Author Description'
+label: 'Descripcion del autor'
 description: ''
 required: true
 translatable: false

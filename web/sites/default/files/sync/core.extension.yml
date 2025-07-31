@@ -42,7 +42,6 @@ module:
   eca_render: 0
   eca_ui: 0
   eca_user: 0
-  eck: 0
   editor: 0
   entity_reference_revisions: 0
   facets: 0

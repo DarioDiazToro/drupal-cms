@@ -1,0 +1,24 @@
+# uuid: 6e88d152-1c6e-4362-8dbd-67b30cc9dd65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_author_description
+    - taxonomy.vocabulary.authors
+  module:
+    - text
+id: taxonomy_term.authors.field_author_description
+field_name: field_author_description
+entity_type: taxonomy_term
+bundle: authors
+label: 'Descripcion del autor'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

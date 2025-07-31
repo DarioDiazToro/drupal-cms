@@ -20,6 +20,6 @@ third_party_settings:
     unpublish_revision: false
 name: authors
 vid: authors
-description: 'Publication authors'
+description: 'autores de la publicacion'
 weight: 0
 new_revision: false

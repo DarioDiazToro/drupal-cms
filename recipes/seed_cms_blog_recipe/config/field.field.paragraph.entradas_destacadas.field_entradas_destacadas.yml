@@ -1,0 +1,29 @@
+# uuid: b649ef7a-7b20-49e1-8a09-46d37081fe13
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_entradas_destacadas
+    - node.type.blog
+    - paragraphs.paragraphs_type.entradas_destacadas
+id: paragraph.entradas_destacadas.field_entradas_destacadas
+field_name: field_entradas_destacadas
+entity_type: paragraph
+bundle: entradas_destacadas
+label: 'Featured Posts'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      blog: blog
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
